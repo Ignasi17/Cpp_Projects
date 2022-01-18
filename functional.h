@@ -11,7 +11,7 @@ double func_value(const std::array<double, N> x) {
 	double fx = 0;
 	for (int i = 0; i < N; i++) {
 
-		fx += x[i] * log(x[i]);
+		fx += x[i]*x[i];
 	};
 
 	return fx;
@@ -23,7 +23,7 @@ double func_value(const std::array<double, N> x) {
 template<typename type>
 void func_grad(type& x, type& grad, int N) {
 	for (int i = 0; i < N; i++) {
-		grad[i] = 1 + log(x[i]);
+		grad[i] = 2*x[i];
 	};
 };
 /*
@@ -41,7 +41,7 @@ double func_value(const std::array<double, N> x) {
 
 	double fx = 0;
 	for (int i = 0; i < N; i++) {
-		fx += x[i] * log(x[i]);
+		fx += 2*x[i];
 	};
 	return fx;
 
