@@ -14,20 +14,7 @@ using namespace std;
 int main() {
 
 
-	/*
-	std::fstream myfile("C:\\Users\\Usuario\\Desktop\\prova2A", std::ios_base::in);
 
-	double reader;
-
-	int i = 0;
-	while (myfile >> reader)
-	{
-		x[i] = reader;
-		cout << reader; cout << "\n";
-		i++;
-
-	}
-	*/
 
 
 	for (int i = 0; i < nPixSq; i++) {
