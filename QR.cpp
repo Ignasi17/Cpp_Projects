@@ -50,7 +50,7 @@ int main() {
 		for (i = 0; i < k; i++) {
 
 			for (cont = 0; cont < m; cont++) {
-				R[i][k] += A[i][cont] * A[k][cont]; /*R ix bé directament*/
+				R[i][k] += A[i][cont] * A[k][cont]; /*R ix bÃ© directament*/
 
 			}
 			
